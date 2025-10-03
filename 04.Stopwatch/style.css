@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bc.jpg);
+    position: relative;
+    font-family: franklin gothic medium;
+}
+
+.swContainer{
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: #3c494d;
+    width: 24rem;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    border-radius: 5px;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+#title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#counter{
+   font: 3em sans-serif;
+}
+
+#btnCounter{
+ display: flex;
+ gap: 12px;
+ justify-content: center;
+}
+
+#btnCounter button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+#startBtn{
+    background-color: hsl(120, 100%, 25%);
+}
+
+#startBtn:hover{
+    cursor: pointer;
+    background-color: hsl(120, 100%, 50%);
+}
+
+#stopBtn{
+    background-color: hsl(0, 100%, 25%);
+}
+
+#stopBtn:hover{
+    background-color: hsl(0, 100%, 50%);
+    cursor: pointer;
+}
+
+#restartBtn{
+    background-color: hsl(0, 0%, 25%);
+}
+
+#restartBtn:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+
